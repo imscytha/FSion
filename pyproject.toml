@@ -1,0 +1,20 @@
+[project]
+name = "fsion"
+version = "0.1.0"
+description = """FSion (fusion: /ˈfjuʒən/) is a library designed to expose
+filesystem-like API's from various backends (Google Drive, S3, GCS, local
+filesystem etc.)
+"""
+readme = "README.md"
+authors = [
+    { name = "Roni Bytyqi", email = "imscytha@protonmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+fsion = "fsion:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
